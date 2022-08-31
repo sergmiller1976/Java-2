@@ -1,17 +1,13 @@
 public class main1 {
     public static void main(String[] args) {
         int cost = 100;
-        int total1 = cost + 100;
-        int i1 = 1000;
-        int s = 0;
-        if (s >= i1) {
-
-        } else {
-            int bonus = 11;
-            s = bonus + total1 + i1;
+        int addCost = 1000 + cost;
+        int bonus = 0;
+        if ( addCost > 1000){
+            bonus = addCost / 100;
         }
-
-        System.out.println(total1);
+       int s = cost + addCost + bonus;
+        System.out.println(addCost);
         System.out.println(s);
 
     }
