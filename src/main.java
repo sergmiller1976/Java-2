@@ -1,11 +1,9 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
-        double ticket = 80.0;
-        double amount = 20.0;
-        int persentTicket = 1;
-        double s = ticket / amount * persentTicket;
-
-        System.out.println(s);
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
+        System.out.println(miles);
     }
 
-}
+    }
